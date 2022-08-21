@@ -2,7 +2,7 @@
 
 Sample App using Redis as main databases.
 
-![Demo](https://youtu.be/QtEhxnWc9Vk)
+[Demo](https://youtu.be/QtEhxnWc9Vk)
 
 ## Tools
 
