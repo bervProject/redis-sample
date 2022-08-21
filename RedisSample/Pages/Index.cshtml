@@ -1,0 +1,37 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div>
+    <a class="btn btn-primary" asp-area="" asp-page="/AddNote" role="button">Add Note</a>
+    <p>Total Notes: @Model.NoteList.Count</p>
+    <div class="container">
+        <div class="row gy-3">
+            @foreach (var note in Model.NoteList)
+            {
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="h1">@note.Title</p>
+                            <p>@note.Message</p>
+                            <div class="row">
+                                <div class="col-2">
+                                    <a class="btn btn-secondary" asp-area="" asp-page="/EditNote" asp-route-id="@note.Id"
+                                    role="button">Edit</a>
+                                </div>
+                                <div class="col-2">
+                                    <form method="post">
+                                        <button class="btn btn-danger" type="submit" asp-page-handler="DeleteNote"
+                                        asp-route-id="@note.Id">Delete</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

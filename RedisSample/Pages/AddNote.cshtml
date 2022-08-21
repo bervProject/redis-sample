@@ -1,0 +1,27 @@
+@page
+@model AddNoteModel
+@{
+    ViewData["Title"] = "Add Note";
+}
+
+<h1>Add Note</h1>
+
+<div class="card">
+    <div class="card-body">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Note!.Title" class="control-label">Title</label>
+                <input asp-for="Note!.Title" class="form-control" placeholder="Enter the title of notes">
+                <span asp-validation-for="Note!.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Note!.Message">Message</label>
+                <textarea class="form-control" asp-for="Note!.Message" placeholder="Enter the message of notes here"> </textarea>
+                <span asp-validation-for="Note!.Message" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+</div>
