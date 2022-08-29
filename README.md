@@ -2,7 +2,7 @@
 
 Sample App using Redis as main databases.
 
-[![Demo](https://i.ytimg.com/vi/QtEhxnWc9Vk/maxresdefault.jpg)](https://www.youtube.com/watch?v=QtEhxnWc9Vk)
+[![Demo](https://i.ytimg.com/vi/QtEhxnWc9Vk/hqdefault.jpg)](https://www.youtube.com/watch?v=QtEhxnWc9Vk)
 
 
 
