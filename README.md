@@ -8,7 +8,7 @@ Sample App using Redis as main databases.
 
 ## Tools
 
-1. [.NET 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+1. [.NET 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 2. [Docker](https://docs.docker.com/get-docker/)
 3. [VS Code](https://code.visualstudio.com/) (Optional)
 
